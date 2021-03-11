@@ -72,7 +72,8 @@ class colony:
         self.mc = []
         self.m_thread = []
         for a in range(size):
-            m = molecule(random.randint(-500, 500), random.randint(-500, 500), random.randint(0, 10), random.random())
+            m = molecule(random.randint(-500, 500), random.randint(-500, 500),
+                         random.randint(0, 10), random.randint(2, 7)/10)
             self.mc.append(m)
 
     def startMove(self):
